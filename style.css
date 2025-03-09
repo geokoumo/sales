@@ -1,0 +1,702 @@
+
+body{
+    background-color: #5E7DA1;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.main-head {
+    background-color: white;
+    color: white;
+    padding: 10px;
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+
+ 
+  #upper-header img {
+    width: 30%;
+    display: block;
+    margin: 0 auto; /* Center the image */
+  }
+
+  #lower-header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+
+  #lower-header nav li {
+    float: left;
+  }
+
+  #lower-header nav ul li a {
+    transition: color 0.5s ease; /* Smooth transition for color change */ 
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
+    transition: color 0.3s ease, border-bottom 0.3s ease; 
+  }
+
+  #lower-header nav ul li a:hover {
+    color: #5E7DA1; /* Change to the desired color when hovering */
+    border-bottom: 2px solid #5E7DA1;
+  }
+
+
+
+
+/*----------------------------------------------index---------------------------------------------*/
+  main{
+    background-color: #5E7DA1;
+    padding: 20px;
+    padding-bottom: 300px;
+    }
+
+    section#general_information {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 520px;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("images/start-ads.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+  
+      section#general_information h1 {
+        font-family: sans-serif;
+        font-size: 40px;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0;
+      }
+  
+      section#general_information p {
+        font-size: 20px;
+        color: #d1d1d1;
+        text-transform: uppercase;
+        margin: 20px 200px;
+      }
+
+
+      section#experience {
+        display: flex; /* Use flexbox to create a flexible layout */
+        align-items: center; /* Center items vertically */
+        justify-content: space-between; /* Add space between items */
+        margin-top: 50px;
+        padding: 5px;
+        background-color: rgb(21, 21, 29);
+        transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
+      }
+  
+      section#experience h2,
+      section#experience p {
+        flex: 1; /* Allow items to grow and take up available space */
+        padding: 0px 300px;
+        color: white;
+        font-size: 20px;
+      }
+
+      section#experience:hover {
+        box-shadow: 0 0 20px white; /* Add text shadow on hover */
+        transform: translateX(-20px);
+      }
+  
+      section#experience img {
+        width: 30%; /* Adjust the image width as needed */
+        border-radius: 8px;
+        margin-right: 20px; /* Add margin to separate the image from text */
+        transition: box-shadow 0.3s ease;
+      }
+
+
+      .achievements {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px 100px;
+      }
+
+      
+      .achievements .service {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 40px;
+      }
+      
+      .achievements .service img {
+        
+        width: 220px;
+        color: #333333;
+        border-radius: 50%;
+        border: 3px solid #333333;
+        transition: border-color 0.3s ease; /* Add a smooth transition for the border color */
+     }
+      
+     .achievements .service img:hover {
+        border-color: aliceblue; /* Change the border color on hover to the desired color */
+        transform: translateX(5px); /* Move the image to the right on hover */
+      }
+      .achievements .service h3 {
+        font-size: 20px;
+        color: black;
+        text-transform: uppercase;
+        margin: 10px 0;
+      }
+      
+      .achievements .service p {
+        font-size: 15px;
+        color: black;
+        margin: 10px 0;
+      }
+      
+      section#mission {
+        padding: 100px;
+        background-size: cover;
+        color: white; /* Set text color to contrast with the background */
+      }
+  
+      section#mission img {
+        width: 50%; /* Make the image cover the entire section */
+        border-radius: 8px;
+        margin-bottom: 0px; /* Add margin to separate the image from text */
+        float: right; /* Float the image to the right */
+      }
+  
+      section#mission h2 {
+        color: white; /* Set the heading color */
+        margin-bottom: 20px; /* Add margin between heading and paragraph */
+      }
+  
+      section#mission p {
+        color: white; /* Set the paragraph text color */
+        font-size: 18px;
+      }
+
+
+
+/*-----------------------------------------categories--------------------------------------*/
+
+#offered {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1em,25em));
+    justify-content: space-evenly;
+    column-gap: 5em;
+    row-gap: 2em;
+  }
+
+
+  .category {
+    width: 200px;
+    margin: 50px;
+    padding: 50px;
+    border: 5px solid #D1DDDB;
+    border-radius: 10px;
+    box-shadow: 5px 5px 4px #4C6589;
+    text-align: center;
+    background: linear-gradient(45deg, #283B42, #1D6A96, #85B8CB, #D1DDDB);
+}
+
+.category h3 {
+  margin-bottom: 20px; /* Add space between title and content */
+  color: #D1DDDB;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 24px; /* Adjust the font size as needed */
+  text-transform: uppercase; /* Uppercase the text */
+  letter-spacing: 2px; /* Add letter spacing for a retro feel */
+  text-shadow: 2px 2px 4px #283B42; /* Add text shadow */
+}
+
+.category .content {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.category img {
+    margin-top: 40px; /* Add space between the image and submenus */
+    margin-bottom: 80px; /* Add space at the bottom of the image */
+    border-radius: 20px;
+    width:70%;
+    object-fit: cover;
+  
+}
+
+.submenus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px; /* Adjust the padding to control the distance from the borders */
+  
+}
+
+.submenu {
+    
+    margin: auto 10px;
+}
+
+.drop {
+    background-color: #D1DDDB;
+    border-radius: 15px;
+    color: #283B42;
+    padding: 20px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #D1DDDB;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border: 1px solid #283B42;
+    z-index: 1;
+}
+
+
+
+
+.dropdown-content a {
+    color: #283B42;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #283B42;
+    color: #D1DDDB;
+    border-radius: 10px;
+  }
+
+.submenu:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
+/*--------------------------------------------ads------------------------------------------------*/
+.ads {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hc-ad {
+  position: relative;
+  background: linear-gradient(45deg, #5E7DA1, #82C0CC, #A2D4E1, #82C0CC, #5E7DA1);  
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+  transition: box-shadow 0.3s;
+}
+
+.hc-ad:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 1);
+}
+
+.hc-ad img {
+  width: 100%;
+  height: 200px; /* Adjust the height as needed */
+  object-fit: cover;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.hc-ad h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.hc-ad p {
+  margin: 20px 5px;
+}
+
+
+.code {
+  text-align: center;
+  padding: 10px;
+  background-color: #506C7F;
+color: #fff;
+   
+}
+
+.info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: aliceblue;
+  background: rgba(130, 192, 204,0.4);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.hc-ad:hover .info {
+  opacity: 1;
+}
+
+
+/* Style each team member section */
+.about{
+  text-align:center;
+  padding: 10px;
+  background-color: #fff;
+}
+.member {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the member's name */
+.member h3 {
+  color: #5E7DA1;
+}
+
+/* Style the member's image */
+.member img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+/* Style the paragraphs within each member section */
+.member p {
+  margin-bottom: 15px;
+}
+
+
+
+/*------------------------------------------car-detatils------------------------------------------*/
+.details-box {
+  border-radius: 80px;
+  border: 2px solid rgba(0, 0, 0, 1);
+  background-color: black;
+  color: aliceblue;
+  padding: 40px 20px;
+  text-shadow: 2px 2px 4px #283B42; /* Add text shadow */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif; /* Apply the Roboto font family */
+}
+
+.details-box p {
+    font-size: 18px; /* Adjust the font size as needed */
+}
+
+.details-box h4 {
+    font-size: 16px; /* Adjust the font size as needed */
+    font-weight: bold;
+}
+
+
+
+.title{
+  color: #D1DDDB;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px #283B42; /* Add text shadow */
+}
+
+
+.box {
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 50%;
+}
+
+.return-arrow {
+  text-decoration: none; /* Remove default link underline */
+  color: white; /* Set the color of the arrow, adjust as needed */
+  font-size: 100px; /* Adjust the size of the arrow */
+}
+.return-arrow:hover {
+  color: black; /* Change to the desired color when hovering */
+}
+
+.box h3 {
+  color: black; /* Dark red color for h3 */
+  margin-bottom: 10px; /* Add margin below h3 */
+}
+
+.box p {
+  margin-bottom: 15px; /* Add margin below paragraphs */
+}
+
+.return{
+  float:right;
+  font-size: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+.stats {
+  margin-top: 20px;
+  padding: 20px;
+  border-top: 2px solid #333; 
+  border-radius: 10px;
+}
+
+.view-counter {
+  margin-bottom: 20px;
+}
+
+
+.increase, .decrease {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+.increase {
+  color: green;
+}
+
+.decrease {
+  color: red;
+}
+
+.container {
+  max-width: 100%;
+  margin: 20px ;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 30px;
+  position: relative;
+}
+
+.main-image {
+  width: 50%; /* Use 100% to make it responsive */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.small-images-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items:end;
+  width: 30%; /* Adjust the width as needed */
+}
+
+.small-images-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 30%; /* Adjust the width as needed */
+}
+
+.small-image {
+  width: 50%; /* Adjust the width as needed */
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*------------------------------------------footer---------------------------------------*/
+  footer {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #upper-footer {
+    display: flex;
+    align-items: flex-start;
+    margin-left:50px;
+  }
+
+  #upper-footer img{
+    width:5%;
+    
+  }
+
+  #mid-footer {
+    display: flex;
+    justify-content:space-between;
+    align-items:flex-start;
+  }
+
+  #follow-us {
+    margin-bottom: 50px; /* Add margin between sections */
+    margin-top: 20px;
+    margin-right: 50px;
+    text-align: center;
+  }
+
+  #follow-us h2 {
+    margin-bottom: 10px;
+  }
+
+  #follow-us img{
+    width: 50%;
+  }
+
+  .social-icons {
+    font-size: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .social-icons li {
+    display: inline-block;
+    margin-right: 0.5px;
+  }
+
+
+  .menu-container {
+    text-align: left; /* Align text to the left within the container */
+    margin-left: 200px;
+    display: flex;
+  }
+
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  .menu-title {
+    color: black;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .menu li {
+    
+    margin-right: 100px; /* Add spacing between menu items */
+    font-size: 20px;
+    margin-top: 5px; /* Add spacing between menu items */
+  }
+
+  .menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .menu a:hover {
+    text-decoration: underline;
+  }
+
+  #lower-footer {
+    margin-top: 20px;
+  }
+
+
+  #lower-footer p{
+    text-align: left;
+  }
+
+
+
+  /*----------------------------form--------------------------------------------*/
+  form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  legend {
+    font-size: 1.2em;
+    color: #5E7DA1;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #283B42;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #buttons {
+    margin-top: 20px;
+  }
+  
+  #btn_submit,
+  #btn_reset {
+    padding: 10px;
+    background-color: #5E7DA1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #btn_submit:hover,
+  #btn_reset:hover {
+    background-color: #82C0CC;
+  }
+  
+  #error {
+    color: #FF6347; 
+  }
